@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    background-image: linear-gradient(180deg, rgb(68, 144, 190),rgb(251, 254, 241));
+    
+}
+
+.white { 
+    background-color: white 
+}
+.black { 
+    background-color: black 
+}
+.purple { 
+    background-color:  #6d388a
+}
+.red { 
+    background-color:  #ea3473
+}
+.blue { 
+    background-color: #00b4d8
+}
+.orange { 
+    background-color: #f28e1e 
+}
+.green { 
+    background-color: #28b51e 
+}
+.yellow { 
+    background-color:  #f3e500
+}
+.green { 
+    background-color: #28b51e 
+}
+.transparent { 
+    background-color: rgba(0,0,0,.15) 
+}
+
+.board {
+    display: grid;
+    position: relative;
+    width: 550px;
+    box-shadow: 0px 0px 10px grey;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    background: #d9d5d2;
+    grid-template-areas: 
+    "Title Title" 
+    "Rows ColorPick" 
+    "Rows Buttons";
+}
+
+

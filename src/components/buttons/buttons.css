@@ -1,0 +1,34 @@
+.buttons {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgba(255,255,255,.4);
+    grid-area: Buttons;
+}
+
+.button {
+    border-radius: 28px;
+    border: 2px solid;
+    background: seagreen;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    transition: all 0.2s;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.button:disabled{
+    color: rgba(0,0,0,.2) !important;
+    transition: none;
+    transform: none !important;
+    cursor: not-allowed;
+}

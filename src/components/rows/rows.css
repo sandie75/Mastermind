@@ -1,0 +1,39 @@
+ .rows{
+    grid-area: Rows;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+ .row{
+    display: grid;
+    grid-template-columns: 16% 60% 12%;
+    height: 50px;
+    justify-items: center;
+    align-items: center;
+    gap: 2%;
+    cursor: not-allowed;
+    pointer-events: none;
+ }
+
+ .row > div{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+ }
+ .row > .hints {
+  display: grid; /* Priorité au grid pour la classe hints */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+ .row.active{
+   cursor: default;
+   pointer-events: all;
+   background-color: white;
+ }
+
+ .hints .circle{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+ }
