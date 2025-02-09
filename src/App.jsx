@@ -4,9 +4,9 @@ import { reducer } from './reducer/reducer.js';
 import Title from './components/title/Title';
 import Rows from './components/rows/Rows';
 import ColorPick from './components/colorpick/ColorPick';
-import Credits from './components/credits/Credits'
 import Buttons from './components/buttons/Buttons';
 import Rules from './components/rules/Rules';
+import Credits from './components/credits/Credits'
 import GameEnds from './components/gameEnds/GameEnds';
 import { initGameState, checkGameState } from './helper.js';
 import './App.css';
