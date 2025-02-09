@@ -1,0 +1,7 @@
+.creditsContainer{
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.credits{
+    font-size: 14px;
+}

@@ -4,6 +4,7 @@ import { reducer } from './reducer/reducer.js';
 import Title from './components/title/Title';
 import Rows from './components/rows/Rows';
 import ColorPick from './components/colorpick/ColorPick';
+import Credits from './components/credits/Credits'
 import Buttons from './components/buttons/Buttons';
 import Rules from './components/rules/Rules';
 import GameEnds from './components/gameEnds/GameEnds';
@@ -36,6 +37,7 @@ const App = () => {
         <GameEnds/>
       </div>
       <Rules/>
+      <Credits/>
     </div>
   </AppContext.Provider>
   
