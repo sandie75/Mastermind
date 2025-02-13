@@ -14,7 +14,7 @@ const Rows = () => {
                 new Array(10).fill()
                 .map((x,i) => 
                 <div className ={`row ${i===currentRow ? 'active' : ''}`} key={i}>
-                    <div>{i+1}</div>
+                    
                     <div className='circles'>
                        <Circle color={rows[i][0]} onClick={() => onClick(0)}/>
                        <Circle color={rows[i][1]} onClick={() => onClick(1)}/>
@@ -44,4 +44,6 @@ export default Rows
 - i est l'index de l'élément, utilisé comme contenu du div et pour attribuer une key unique à chaque élément.
 - Chaque itération crée une div avec la classe "row" et un contenu qui affiche l'index (i + 1 pour afficher les nombres de 1 à 10).
 
-key={i} : En React, chaque élément dans une liste doit avoir une key unique pour optimiser le rendu. Ici, on utilise l'index i comme clé, ce qui est correct dans ce cas puisque les éléments ne sont pas réordonnés ou modifiés dynamiquement.*/ 
+key={i} : En React, chaque élément dans une liste doit avoir une key unique pour optimiser le rendu. Ici, on utilise l'index i comme clé, ce qui est correct dans ce cas puisque les éléments ne sont pas réordonnés ou modifiés dynamiquement.
+
+numbers of every row : <div>{i+1}</div> */ 

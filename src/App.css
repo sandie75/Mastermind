@@ -56,9 +56,9 @@ body {
 .board {
     display: grid;
     position: relative;
-    width: 550px;
+    width: 490px;
     box-shadow: 0px 0px 10px grey;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
     background: #d9d5d2;
     grid-template-areas: 
