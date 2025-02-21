@@ -10,9 +10,10 @@ const ColorPick = () => {
 
     return (
         <div className='colorpick'>
-            {colorOptions.map (color => 
-            <div className ='item'>
+            {colorOptions.map ((color, index) => 
+            <div key={index} className ='item'>
                 <Circle 
+                    
                     className={appState.currentColor === color ? 'active' : ''}
                     color={color}
                     onClick={() => dispatch(setColor(color))}
