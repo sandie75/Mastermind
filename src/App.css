@@ -57,6 +57,8 @@ body {
     display: grid;
     position: relative;
     width: 490px;
+    margin-right: 20px;
+    margin-left: 20px;
     box-shadow: 0px 0px 10px grey;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
@@ -67,4 +69,15 @@ body {
     "Rows Buttons";
 }
 
-
+@media screen and (max-width: 768px){
+    .board {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        grid-template-areas: 
+        "Title Title" 
+        "Rows ColorPick" 
+        "Rows ColorPick"
+        "Buttons Buttons";
+        width: 340px;
+    }
+}

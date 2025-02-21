@@ -21,4 +21,13 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+    .colorpick{
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+}
+
 /*grid-area défini dans app.css.*/

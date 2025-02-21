@@ -8,5 +8,12 @@
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    border-bottom: 1px solid rgba(255,255,255,.4);
+}
+/*Media queries*/
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 45px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
 }

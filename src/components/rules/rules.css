@@ -9,3 +9,9 @@ h3{
 p{
     margin: 2px;
 }
+
+@media screen and (max-width: 768px){
+    .rules{
+        margin: 40px;
+    }
+}
