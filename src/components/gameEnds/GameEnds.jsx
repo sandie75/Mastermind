@@ -21,8 +21,7 @@ const GameEnds = () => {
     return(
         <div className='gameEnds'>
             <p className='endMessage'>{appState.gameState}</p>
-            <NewGame/>
-            {celebrateVictory()}
+            <NewGame/>   
         </div>
         
     )
@@ -30,4 +29,5 @@ const GameEnds = () => {
 }
 export default GameEnds
 
-/* appState, défini plus haut, vient du contexte global de l'application, défini dans Context.jsx */
+/* appState, défini plus haut, vient du contexte global de l'application, défini dans Context.jsx 
+Le code avec les messages à afficher en cas de victoire est dans helper.jsx.*/

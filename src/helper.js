@@ -1,4 +1,5 @@
 import { colorOptions, tries } from "./constants.js"
+import confetti from 'canvas-confetti';
 
 export const initGameState = () => ({
     currentRow : 0,
@@ -10,12 +11,24 @@ export const initGameState = () => ({
 })
 
 export const checkGameState = (hints, row) => {
-    if (row === -1)
+    const celebrateVictory = () => {
+            confetti({
+                particleCount: 200,
+                spread: 120, 
+                origin: { y: 0.6 } // Position (plus bas = explosion du bas)
+            });
+    };
+
+    if (row === -1){
         return ''
-    if (row === 9 && hints.some(x => x !== 'black'))
-        return 'Perdu.'
-    if (hints[row].every(x => x === 'black'))
-        return 'Bravo, c\'est gagné !'
+    }
+    if (row === 9 && hints.some(x => x !== 'black')){
+        return 'Perdu 🙁'
+    }
+    if (hints[row].every(x => x === 'black')){
+        celebrateVictory()
+        return 'Bravo, c\'est gagné ! 😀'
+    }
 }
 
 export const getHints = (secret,row) => {
